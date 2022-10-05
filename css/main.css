@@ -1,0 +1,674 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  margin: 0 8rem;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.11rem;
+
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 30% auto;
+  margin-top: 1rem;
+
+}
+
+.navbar ul{
+  list-style-type: none;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.navbar li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navbar li a{
+  transition: 0.4s ease;
+  outline: none;
+
+  display: inline-block;
+  position: relative;
+
+}
+
+.navbar li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #17b978;
+
+  transition: transform 0.25s ease-out;
+}
+
+.navbar li a:hover:after {
+  transform: scaleX(1);
+
+}
+#author span{
+  color: #17b978;
+  font-size: 1rem;
+
+}
+.author a{
+  font-weight: bold;
+  order: -1;
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: black;
+
+}
+
+nav h3{
+  margin-top: 7px;
+}
+
+.hero{
+  display: flex;
+  margin-right: -8rem;
+
+}
+.intro_text{
+  width: 27%;
+
+}
+.intro_text h3{
+  font-size: 0.875rem;
+  color: #17b978;
+}
+
+.intro_text h1{
+color:#263b5e;
+  font-weight: 900;
+  font-size: 3.75rem;
+}
+
+.intro_text p{
+  font-size:1.125rem;
+  color: #6a7695;
+}
+
+.buy-now{
+  background:  #17b978;
+  border-radius: 40px;
+  border: none;
+  color: white;
+  padding: 1.2rem 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+
+
+}
+
+.buy-now:hover{
+  color: #263b5e;
+}
+
+.partners{
+  display: flex;
+  gap: 5rem;
+
+  padding: 2rem;
+  margin: 3rem 0;
+}
+
+.abt-book{
+  display: flex;
+  gap:3rem;
+}
+
+ p{
+  color: #6a7695;
+}
+
+h1,h3{
+  color: #263b5e;
+}
+
+.counter-card{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 0rem;
+  color: #263b5e;
+
+}
+
+.counter-card div {
+  background: #F0F0F0;
+  border-radius: 4px;
+  text-align: center;
+  padding: 1.5rem 3rem;
+  max-width: 8rem;
+
+}
+
+
+.content-container{
+  display: flex;
+  gap: 4rem
+}
+
+.content-details h1{
+  text-align: left;
+  margin: 0rem;
+  font-size: 3rem;
+}
+
+.content-details h3{
+  font-size: 2rem;
+}
+
+.content-details{
+display: grid;
+  gap: 8rem;
+  height: 90vh;
+overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.content-details::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.content-details {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.content a{
+  text-decoration-line: none;
+  color: #263b5e;
+  font-weight: 800;
+
+}
+.content ul{
+  list-style-type: none;
+
+
+}
+.content li{
+  padding: 1rem;
+}
+.content{
+  width: 90vw;
+  margin-top: 9rem;
+}
+
+.content-details div{
+  padding: 2rem;
+  background: #F0F0F0;
+}
+
+.service{
+  margin-top: 8rem;
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+.service-title h3{
+  color:  #17b978;
+  margin-bottom: 1.5rem;
+}
+
+.service-title h1{
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.service-card {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.service-card div hr{
+  padding: 0rem 0.01rem;
+  width: 3rem;
+  background-color: #17b978;
+  height:1px;
+  border-width:0;
+}
+
+.service-card div{
+background: #F0F0F0;
+  padding: 2rem 1.7rem;
+  line-height: 1.8;
+}
+
+.service-card div i{
+  font-size: 2.5rem;
+  color: #17b978;
+}
+
+
+.bg-container{
+  background-image: url("../img/joel-mott-O9Ogddfvl-U-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #17b978;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  margin-right: -8rem;
+  margin-left: -8rem;
+}
+
+.testimonial-overlay{
+  background: rgba(23, 185, 120, 0.6);
+  padding-top: inherit;
+  padding-bottom: inherit;
+  margin-top: -7rem;
+  margin-bottom: -7rem;
+  line-height: 1.5rem;
+  z-index: -1;
+}
+.testimonial-overlay h3{
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+
+}
+.testimonial-overlay h1{
+  color: white;
+  text-align: center;
+  opacity: 1;
+  font-size: 4rem;
+}
+
+.testimony-card{
+  margin-top: -5rem;
+  background: white;
+  color: #263b5e;
+  background: none;
+  overflow: hidden;
+  position: relative;
+
+}
+@keyframes slider {
+  0%  { left: 0; }
+  10% { left: 0; }
+  25% { left: -33%; }
+  50% { left: -33%; }
+  60% { left: -66%;}
+  60% {.testimony-card :nth-child(1) { order: 4 }; }
+  75% { .testimony-card :nth-child(1) { order: 3 };}
+  90% { left: 0%; }
+}
+
+/* wrapper which wraps all the slideshow images stylings */
+.slideshow-wrapper {
+  display: flex;
+  /* We give it width as 400% because we are making a
+     4 image carousel. If you want to make for example,
+     5 images carousel, then give width as 500%. */
+  width: 200%;
+  height: 100%;
+  gap: 3rem;
+  padding-bottom: 5rem;
+  position: relative;
+  /* you can change the animation settings from below */
+  animation: slider 20s infinite;
+
+}
+
+.slide-btn {
+  margin-left: 25%;
+  margin-right: auto;
+  background-color: #DCDCDC;
+  border-radius: 50%;
+  border: none;
+  width: 0.1rem;
+  height: 0.7rem;
+  outline: none;
+  cursor: pointer;
+  /* stylings for positioning the buttons at
+     the bottom of the carousel */
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 70;
+  animation: none;
+}
+
+.slide-btn-1 {
+  left: 20%;
+}
+.slide-btn-2 {
+  left: 23%;
+}
+.slide-btn-3 {
+  left: 26%;
+}
+.slide-btn-4 {
+  left: 29%;
+}
+
+
+
+.carousel_item{
+  background: white;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 20rem;
+  box-shadow: 0px 30px 33px -41px rgb(0 0 0 / 24%)
+
+}
+
+.carousel_item span{
+  color: white;
+  padding: 0.5rem 0.3rem;
+  background: #17b978;
+  border-radius: 50%;
+  top: -1.4rem;
+  left: 1.2rem;
+  position: ;
+  z-index: 50;
+}
+
+.other_books h3{
+  margin-top: 3rem;
+  color: #17b978;
+  text-align: center;
+}
+
+
+.other_books h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.book_gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.gallery-container{
+  max-width: 17rem;
+  height: 20rem;
+  position: relative;
+}
+
+.book_gallery img{
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  display: block;
+}
+
+.gallery-container:hover img{
+  cursor: pointer;
+  filter: brightness(50%);
+  transition: .3s ease;
+}
+
+
+
+.hidden{
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 57%;
+  line-height: 2rem;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+
+.gallery-container:hover .hidden {
+  opacity: 1;
+}
+
+.hidden h4{
+  font-size: 0.8rem;
+  color: #f0fff0;
+}
+
+.hidden h3{
+  color: #F0F0F0;
+}
+
+.know_author{
+  display: flex;
+  height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 2rem;
+  padding-bottom: 7rem;
+}
+
+.know_author img{
+  width: 50%;
+  object-fit: cover;
+}
+
+.abt-author{
+  background: #f5f4fb;
+  padding: 4rem 2.5rem;
+}
+
+.abt-author h3{
+  color: #17b978;
+  font-size: 1rem;
+}
+
+.abt-author h1{
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.author_contacts{
+  margin-top: 2.5rem;
+}
+
+td:nth-child(1) {
+  color: #263b5e;
+  font-weight: bold;
+}
+
+td:nth-child(2) {
+  padding-left: 2rem;
+  color: #6a7695;
+}
+
+#view_bks_btn{
+  background: #17b978;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.contact_me_text{
+  text-align: center;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.contact_me_text h1{
+  font-size: 3rem;
+}
+
+.cntct_card {
+  display: flex;
+  gap:2rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+
+}
+
+.cntct_card div{
+  background: #f5f4fb;
+  max-width: 100%;
+  text-align: center;
+
+  border-radius: 4px;
+  flex: 1 1 0px
+
+}
+.cntct_inner_wrapper {
+  padding: 2rem;
+}
+
+.cntct_card span{
+  background: #17b978;
+  padding: 2rem;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  margin-bottom: 2rem;
+}
+
+.cntct_card a{
+  text-decoration: none;
+  color: #17b978;
+  font-weight: 400;
+}
+
+.closing_sect{
+  display: flex;
+  margin: 0 auto;
+
+}
+
+.snd_msg_form{
+  padding: 3rem;
+  background: #f5f4fb;
+  width: 100%;
+}
+
+.mapouter{
+   position: relative;
+   text-align: right;
+
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: auto;
+  width: 100%;
+
+}
+form{
+  padding: -3rem;
+}
+
+form input{
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.msg_area{
+  height: 5rem;
+   ;
+}
+input[type="text"]::placeholder {
+
+  /* Firefox, Chrome, Opera */
+  vertical-align:top;
+  line-height: 1rem;
+}
+.submit{
+  background: #17b978;
+  color: white;
+  border-radius: 40px;
+  width: 50%;
+  cursor: pointer;
+
+}
+
+.footer{
+  background: black;
+  margin: 2rem -8rem -3rem;
+
+}
+
+footer{
+  display: flex;
+  color: white;
+  margin: 0 8rem ;
+  gap: 3rem;
+  padding: 4rem 0;
+
+
+
+}
+
+footer div{
+  color: white;
+  width:100%;
+
+}
+footer ul{
+  list-style-type: none;
+  padding-inline-start:0rem;
+
+}
+footer h3, footer p,footer a, .ask td{
+  color: #e5e4e2;
+  line-height: 1.8rem;
+
+}
+
+footer a{
+  text-decoration-line: none;
+}
+
+footer h3{
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.social_icons{
+  margin-top: 4rem;
+}
+
+.social_icons {
+  letter-spacing: rem;
+}
+
+.social_icons span{
+  background: rgba(255, 255, 255, 0.1);
+  padding: .8rem;
+  border-radius: 50%;
+
+}
+
+
+
