@@ -18,13 +18,17 @@ html {
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.11rem;
-
 }
 
-.navbar{
+.navbar {
   display: grid;
   grid-template-columns: 30% auto;
-  margin-top: 1rem;
+  margin: 0 8rem;
+}
+
+.nav-container {
+  margin: 0 -8rem;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
 
 }
 
@@ -149,7 +153,7 @@ h1,h3{
 .counter-card{
   display: flex;
   justify-content: space-evenly;
-  margin: 3rem 0rem;
+  margin: 3rem 0;
   color: #263b5e;
 
 }
@@ -171,7 +175,7 @@ h1,h3{
 
 .content-details h1{
   text-align: left;
-  margin: 0rem;
+  margin: 0;
   font-size: 3rem;
 }
 
@@ -523,7 +527,8 @@ td:nth-child(2) {
 }
 
 .cntct_card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap:2rem;
   margin-top: 3rem;
   margin-bottom: 5rem;
@@ -536,7 +541,7 @@ td:nth-child(2) {
   text-align: center;
 
   border-radius: 4px;
-  flex: 1 1 0px
+  flex: 1 1 0
 
 }
 .cntct_inner_wrapper {
@@ -557,6 +562,8 @@ td:nth-child(2) {
   text-decoration: none;
   color: #17b978;
   font-weight: 400;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .closing_sect{
