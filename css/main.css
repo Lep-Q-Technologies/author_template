@@ -205,12 +205,26 @@ overflow: scroll;
   text-decoration-line: none;
   color: #263b5e;
   font-weight: 800;
-
+  transition: 0.3s;
 }
-.content ul{
+.hide {
+  display: none;
+  color: #17b978;
+  transition: 0.3s;
+}
+
+.content a:hover {
+  color: #17b978;
+}
+
+.content a:hover .hide {
+  display: contents;
+}
+
+.content ul {
+  width: 20vw;
   list-style-type: none;
-
-
+  white-space: nowrap;
 }
 .content li{
   padding: 1rem;
@@ -445,7 +459,6 @@ background: #F0F0F0;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-
 }
 
 
