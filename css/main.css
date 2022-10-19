@@ -332,13 +332,10 @@ background: #F0F0F0;
 }
 @keyframes slider {
   0%  { left: 0; }
-  10% { left: 0; }
-  25% { left: -33%; }
-  50% { left: -33%; }
-  60% { left: -66%;}
-  60% {.testimony-card :nth-child(1) { order: 4 }; }
-  75% { .testimony-card :nth-child(1) { order: 3 };}
-  90% { left: 0%; }
+  25% { left: 0;}
+  35% { left: -33%; }
+  60% { left: -33%; }
+  70% { left: 0; }
 }
 
 /* wrapper which wraps all the slideshow images stylings */
@@ -353,7 +350,7 @@ background: #F0F0F0;
   padding-bottom: 5rem;
   position: relative;
   /* you can change the animation settings from below */
-  animation: slider 20s infinite;
+  animation: slider 20s ease-in-out infinite;
 
 }
 
@@ -378,18 +375,26 @@ background: #F0F0F0;
 }
 
 .slide-btn-1 {
-  left: 20%;
-}
-.slide-btn-2 {
   left: 23%;
 }
-.slide-btn-3 {
+.slide-btn-2 {
   left: 26%;
-}
-.slide-btn-4 {
-  left: 29%;
+
 }
 
+.slide-btn-1:target ~ .slideshow-wrapper {
+  animation: none;
+  left: 0;
+}
+.slide-btn-2:target ~ .slideshow-wrapper {
+  animation: none;
+  left: -33%;
+}
+
+/* when we focus on the button, the background color changes */
+.slide-btn:focus {
+  background-color: #17b978;
+}
 
 
 .carousel_item{
@@ -683,10 +688,6 @@ footer h3{
 
 .social_icons{
   margin-top: 4rem;
-}
-
-.social_icons {
-  letter-spacing: rem;
 }
 
 .social_icons span{
